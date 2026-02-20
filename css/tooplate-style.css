@@ -550,6 +550,11 @@ li {
   margin-bottom: 1rem;
 }
 
+.about-text > li {
+  list-style-position: inside;
+  margin-bottom: 0.8rem;
+}
+
 .about-text ul li {
   list-style: disc;
 }
@@ -781,6 +786,7 @@ li {
   position: relative;
   bottom: 0;
   min-height: 100%;
+  padding: 1.25rem 1.4rem;
 }
 
 .contact-info h3 {
@@ -1213,7 +1219,16 @@ li {
 
   .about-text {
     border-radius: 18px;
-    padding: 1rem;
+    padding: 1.25rem;
+  }
+
+  .about-text ul,
+  .about-text ol {
+    padding-left: 1.25rem;
+  }
+
+  .about-text > li {
+    padding-left: 0.2rem;
   }
 
   .custom-btn {
