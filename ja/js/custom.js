@@ -22,13 +22,22 @@
     // SMOOTHSCROLL
     $(function() {
       $('.nav-link, .custom-btn-link').on('click', function(event) {
-        var $anchor = $(this);
+        var href = $(this).attr('href');
+        if (!href || href.charAt(0) !== '#') {
+          return;
+        }
+
+        var $target = $(href);
+        if ($target.length === 0) {
+          return;
+        }
+
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 49
+          scrollTop: $target.offset().top - 49
         }, 1000);
         event.preventDefault();
       });
-    });  
+    });
 
     // TOOLTIP
     $('.social-links a').tooltip();
