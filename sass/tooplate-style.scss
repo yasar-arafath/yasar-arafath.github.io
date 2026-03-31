@@ -1,8 +1,9 @@
 
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Maven+Pro:400,700&family=Noto+Serif+JP:wght@600;700&display=swap');
 
 // VARIABLES
 $font-base: 'Maven Pro', sans-serif;
+$font-brand: 'Cormorant Garamond', 'Noto Serif JP', serif;
 $body-font-size: 18px;
 $h1-font-size: 2.8em;
 $h2-font-size: 2.4em;
@@ -65,9 +66,10 @@ a {
 }
 
 .navbar-brand {
-	.uil {
-		font-size: 40px;
-	}
+	font-family: $font-brand;
+	font-size: 1.35rem;
+	letter-spacing: 0.04em;
+	line-height: 1;
 }
 
 
